@@ -3,13 +3,15 @@
 <head>
     <title>Nisse was here</title>
     <script>
-        function buttonClicked() {
-            alert('Button was clicked!');
+         function showMessage() {
+            const textfieldValue = document.getElementById('myTextField').value;
+            alert('You entered: ' + textfieldValue);
         }
     </script>
 </head>
 <body>
-    <h1>Nisse was here</h1>
-    <button onclick="buttonClicked()">Click Me!</button>
+    <h1>Test Page</h1>
+    <input type="text" id="myTextField" placeholder="Enter text here">
+    <button onclick="showMessage()">Click Me</button>
 </body>
 </html>
